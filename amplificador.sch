@@ -1,0 +1,256 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 6047EA99
+P 4500 3250
+F 0 "Q1" H 4691 3296 50  0000 L CNN
+F 1 "BC547" H 4691 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70_Handsoldering" H 4700 3175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4500 3250 50  0001 L CNN
+	1    4500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6047FA96
+P 4600 2750
+F 0 "R3" H 4670 2796 50  0000 L CNN
+F 1 "R" H 4670 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 2750 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60480728
+P 4100 2750
+F 0 "R1" H 4170 2796 50  0000 L CNN
+F 1 "R" H 4170 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 2750 50  0001 C CNN
+F 3 "~" H 4100 2750 50  0001 C CNN
+	1    4100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60482B41
+P 4600 3800
+F 0 "R4" H 4670 3846 50  0000 L CNN
+F 1 "R" H 4670 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 3800 50  0001 C CNN
+F 3 "~" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60482B47
+P 4100 3800
+F 0 "R2" H 4170 3846 50  0000 L CNN
+F 1 "R" H 4170 3755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 3800 50  0001 C CNN
+F 3 "~" H 4100 3800 50  0001 C CNN
+	1    4100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3050 4600 2900
+Wire Wire Line
+	4600 3450 4600 3650
+Wire Wire Line
+	4300 3250 4100 3250
+Wire Wire Line
+	4100 2900 4100 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	4100 3250 4100 3650
+$Comp
+L power:GND #PWR02
+U 1 1 60483CA4
+P 4100 4050
+F 0 "#PWR02" H 4100 3800 50  0001 C CNN
+F 1 "GND" H 4105 3877 50  0000 C CNN
+F 2 "" H 4100 4050 50  0001 C CNN
+F 3 "" H 4100 4050 50  0001 C CNN
+	1    4100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6048416A
+P 4600 4050
+F 0 "#PWR04" H 4600 3800 50  0001 C CNN
+F 1 "GND" H 4605 3877 50  0000 C CNN
+F 2 "" H 4600 4050 50  0001 C CNN
+F 3 "" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4050 4600 3950
+Wire Wire Line
+	4100 4050 4100 3950
+$Comp
+L power:VCC #PWR03
+U 1 1 60486249
+P 4600 2450
+F 0 "#PWR03" H 4600 2300 50  0001 C CNN
+F 1 "VCC" H 4617 2623 50  0000 C CNN
+F 2 "" H 4600 2450 50  0001 C CNN
+F 3 "" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 60486718
+P 4100 2450
+F 0 "#PWR01" H 4100 2300 50  0001 C CNN
+F 1 "VCC" H 4117 2623 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2450 4600 2600
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 60488169
+P 3050 3250
+F 0 "J2" H 3158 3431 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3158 3340 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 3050 3250 50  0001 C CNN
+F 3 "~" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 604898FA
+P 5400 3150
+F 0 "J3" H 5508 3331 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 5508 3240 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5400 3150 50  0001 C CNN
+F 3 "~" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 60489BDC
+P 3000 2300
+F 0 "J1" H 3108 2481 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 3108 2390 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 3000 2300 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 6048A50A
+P 3400 2150
+F 0 "#PWR05" H 3400 2000 50  0001 C CNN
+F 1 "VCC" H 3417 2323 50  0000 C CNN
+F 2 "" H 3400 2150 50  0001 C CNN
+F 3 "" H 3400 2150 50  0001 C CNN
+	1    3400 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2150 3400 2300
+$Comp
+L power:GND #PWR06
+U 1 1 6048AC6B
+P 3400 2400
+F 0 "#PWR06" H 3400 2150 50  0001 C CNN
+F 1 "GND" H 3405 2227 50  0000 C CNN
+F 2 "" H 3400 2400 50  0001 C CNN
+F 3 "" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 6048C011
+P 3400 3450
+F 0 "#PWR07" H 3400 3200 50  0001 C CNN
+F 1 "GND" H 3405 3277 50  0000 C CNN
+F 2 "" H 3400 3450 50  0001 C CNN
+F 3 "" H 3400 3450 50  0001 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 6048CBEB
+P 5150 3350
+F 0 "#PWR08" H 5150 3100 50  0001 C CNN
+F 1 "GND" H 5155 3177 50  0000 C CNN
+F 2 "" H 5150 3350 50  0001 C CNN
+F 3 "" H 5150 3350 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3150 5150 3150
+Wire Wire Line
+	5150 3150 5150 3350
+$Comp
+L Device:C C2
+U 1 1 60490F91
+P 4950 3050
+F 0 "C2" V 4698 3050 50  0000 C CNN
+F 1 "C" V 4789 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4988 2900 50  0001 C CNN
+F 3 "~" H 4950 3050 50  0001 C CNN
+	1    4950 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 3050 5100 3050
+Wire Wire Line
+	4800 3050 4600 3050
+Connection ~ 4600 3050
+Wire Wire Line
+	4000 3250 4100 3250
+Wire Wire Line
+	3250 3350 3400 3350
+Wire Wire Line
+	3400 3350 3400 3450
+$Comp
+L Device:C C1
+U 1 1 6049391F
+P 3850 3250
+F 0 "C1" V 3598 3250 50  0000 C CNN
+F 1 "C" V 3689 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3888 3100 50  0001 C CNN
+F 3 "~" H 3850 3250 50  0001 C CNN
+	1    3850 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3250 3250 3250
+Wire Wire Line
+	3200 2400 3400 2400
+Wire Wire Line
+	3400 2300 3200 2300
+Wire Wire Line
+	4100 2450 4100 2600
+$EndSCHEMATC
